@@ -1,0 +1,420 @@
+$color--primary : #6666ff;
+$color--secondary : #009933;
+$color--white : #f2f2f2;
+$color--title : #262626;
+$color--text : #666666; 
+$color--header : #262626;
+
+$font--title : 'Open Sans', sans-serif;
+$font--text : 'Nunito', sans-serif;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+
+.header {
+
+    width: 100%;
+    padding: 20px 0;
+    position: sticky;
+    z-index: 111;
+    top: 0;
+    background-color: white;
+
+    &__wrapper {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    &__logo {
+
+        &--img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    &__navlist {
+        
+        display: flex;
+        list-style: none;
+        width: 40%;
+    }
+
+
+    &__navlink {
+
+        text-decoration: none;
+        margin-right: 20px;
+        color: $color--header;
+        font-family: $font--text;
+        
+
+        &--postjob {
+
+            border: 1px solid $color--text;
+            padding: 10px 18px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        &--img {
+
+            width: 10px;
+            height: 10px;
+        }
+
+        &--en {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    &__navitem {
+
+        &--en {
+            width: 55px;
+        }
+    }
+}
+
+
+
+//=========================== hero ============================================================================
+
+
+.hero {
+    width: 100%;
+    padding: 50px;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px 10px;
+    }
+
+
+    &__card {
+
+        &__search {
+
+            width: 100%;
+            display: flex;
+            margin-bottom: 40px;
+            
+
+            &--term {
+
+                width: 50%;
+                border: 1px solid $color--primary;
+                border-right: none;
+                padding: 10px;
+                border-radius: 5px 0 0 5px;
+                outline: none;
+                color: $color--title;
+            }
+        }
+
+        &__reviews {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            text-align: left;
+            &--a {
+
+                text-decoration: none;
+                font-family: $font--text;
+                font-size: 14px;
+                color: $color--primary;
+                margin-bottom: 20px;
+            }
+
+            &--line {
+                width: 100%;
+                height: 2px;
+                background-color: $color--text;
+                margin: 20px 0;
+            }
+
+            &--graphic {
+                font-family: $font--title;
+                font-size: 20px;
+                color: $color--text;
+            }
+        }
+
+        &__one {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: center;
+        }
+
+        &__three {
+
+            
+            background-image: url(../images/world-map.jpg);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            background-repeat: no-repeat;
+            
+            
+
+            &--wrap {
+                background-color: #f2f2f2;
+                position: absolute;
+                min-width: 70%;
+                padding: 30px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                
+            }
+
+            &--apply {
+
+                position: absolute;
+                margin: 0 auto;
+                background-color: white;
+                bottom: 19%;
+                right: -5%;
+
+
+                &--img {
+                    width: 15px;
+                    margin-right: 10px;
+                } 
+
+                &--a {
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    padding: 20px 50px;
+                }
+            }
+
+
+            &__trainee {
+
+                display: flex;
+                align-items: center;
+                
+                &--right {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+
+            
+        }
+
+        &__four {
+            
+            padding: 50px;
+            margin: 20px;
+
+            &--button {
+
+                display: flex;
+                align-items: center;
+                margin-top: 40px;
+                &--two {
+
+                    display: flex;
+                    align-items: center;
+                    padding: 10px 20px;
+                    border: none;
+                    background-color: white;
+                    &--img {
+                        width: 14px;
+                        margin-right: 5px;
+                    }
+
+                    &--a {
+                        text-decoration: none;
+                        color: $color--text;
+                        font-family: $font--text;
+                        
+                        
+                    }
+                }
+
+                &--one {
+
+                    color: $color--primary;
+                    padding: 10px 20px;
+                    margin-right: 20px;
+                    border:1px solid $color--primary;
+                    cursor: pointer;
+                    font-family: $font--text;
+                    background-color: white;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        
+
+        &__wipro {
+
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            &--star {
+                
+                &--yellow {
+                    width: 15px;
+                }
+            }
+        }
+
+        
+
+        &__logo {
+            
+            &--img {
+                width: 30px;
+                height: 30px;
+                margin-right: 30px;
+            }
+        }
+
+
+        
+        
+    }
+}
+
+
+
+//=================== text =====================================
+
+.text {
+
+    color: $color--text;
+    font-family: $font--text;
+    font-weight: 300;
+
+    &__hero {
+
+        &__card {
+
+            &--wipro {
+                margin-right: 5px;
+            }
+
+            &__reviews {
+                margin-bottom: 20px;
+
+                &--details {
+                    margin-bottom: 20px;
+                }
+            }
+
+            &__four {
+
+                margin-bottom: 20px;
+
+                
+            }
+        }
+    }
+}
+
+
+
+//========================== title =================================
+
+.title {
+
+    color: $color--header;
+    font-family: $font--title;
+    font-weight: 400;
+    font-size: 50px;
+
+    &__hero {
+
+        &--signup {
+
+            color: $color--title;
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 40px;
+            a {
+                color: $color--primary;
+            }
+        }
+
+        &__card {
+
+            &__one {
+                margin-bottom: 40px;
+            }
+
+            &--trainee {
+
+                font-size: 20px;
+                font-weight: 600;
+                margin-right: 5px;
+            }
+
+            &__three {
+
+                &--apply {
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: $color--secondary;
+                }
+            }
+
+            &__four {
+                font-size: 30px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+
+
+//=====================button=========================================
+
+
+.btn {
+
+    &__hero {
+        font-family: $font--title;
+        &__card {
+
+            &__search {
+                width: 100px;
+                border: 1px solid $color--primary;
+                background: $color--primary;
+                text-align: center;
+                color: $color--white;
+                border-radius: 0 5px 5px 0;
+                cursor: pointer;
+                font-size: 10px;
+                
+            }
+        }
+    }
+}
